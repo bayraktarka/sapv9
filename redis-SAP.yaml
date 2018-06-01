@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-pod
+  labels:
+    name: redis-sap
+    app: sap-app
+spec:
+  containers:
+    - name: redis-sap
+      image: redis
+      ports:
+       - containerPort : 6379
+
